@@ -1,11 +1,13 @@
 package com.springguru.sfgpetclinic.services.map;
 
 import com.springguru.sfgpetclinic.model.Specialty;
-import com.springguru.sfgpetclinic.services.SpecialtiesService;
+import com.springguru.sfgpetclinic.services.SpecialtyService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+@Service
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Specialty findById(Long id) {
         return super.findById(id);
