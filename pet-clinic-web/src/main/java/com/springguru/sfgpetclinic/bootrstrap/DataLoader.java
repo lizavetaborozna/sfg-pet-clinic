@@ -6,7 +6,7 @@ import com.springguru.sfgpetclinic.model.PetType;
 import com.springguru.sfgpetclinic.model.Vet;
 import com.springguru.sfgpetclinic.services.OwnerService;
 import com.springguru.sfgpetclinic.services.VetService;
-import com.springguru.sfgpetclinic.services.map.PetTypeService;
+import com.springguru.sfgpetclinic.services.PetTypeService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

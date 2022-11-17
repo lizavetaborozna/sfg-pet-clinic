@@ -1,7 +1,6 @@
-package com.springguru.sfgpetclinic.services.map;
+package com.springguru.sfgpetclinic.services;
 
 import com.springguru.sfgpetclinic.model.PetType;
-import com.springguru.sfgpetclinic.services.CrudService;
 
 public interface PetTypeService extends CrudService<PetType, Long> {
 }
