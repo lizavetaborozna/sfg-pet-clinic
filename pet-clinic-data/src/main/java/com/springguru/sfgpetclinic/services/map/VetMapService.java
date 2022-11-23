@@ -4,11 +4,13 @@ import com.springguru.sfgpetclinic.model.Specialty;
 import com.springguru.sfgpetclinic.model.Vet;
 import com.springguru.sfgpetclinic.services.SpecialtyService;
 import com.springguru.sfgpetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     private final SpecialtyService specialtyService;
 
@@ -42,12 +44,10 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
-
     }
 
     @Override
     public void delete(Vet object) {
         super.delete(object);
-
     }
 }
